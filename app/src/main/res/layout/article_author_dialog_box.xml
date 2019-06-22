@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="30dp"
+        android:paddingTop="30dp"
+        android:layout_alignParentLeft="true">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circleColor"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_person_black_58dp"
+            app:civ_border_color="@color/gray"
+            app:civ_border_width="2dp" />
+
+
+        <TextView
+            android:id="@+id/author_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/circleColor"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/app_name"
+            android:textColor="@color/raven"
+            android:textSize="24sp"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/author_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/author_name"
+            android:gravity="center"
+            android:text="Lorem ipsum dolor sit amet, consectetupor inc proir adipisicing elit, sed do eiusmod tempor incidcupidatat non proident, sunt in culpa qui officia "
+            android:textColor="@color/raven"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/mail"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/author_description"
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@+id/call"
+            android:src="@drawable/ic_mail_black_24dp" />
+
+        <ImageView
+            android:id="@+id/call"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/author_description"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_call_black_24dp" />
+
+        <ImageView
+            android:id="@+id/star"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/author_description"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/call"
+            android:src="@drawable/star_fill" />
+
+        <TextView
+            android:id="@+id/rate"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@+id/author_description"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/star"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="4.7"
+            android:textColor="@color/raven"
+            android:textSize="14sp" />
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

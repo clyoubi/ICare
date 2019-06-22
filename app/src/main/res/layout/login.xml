@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_pills_icons_black"
+   >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/purple_gradient"
+        android:alpha="0.94"
+       >
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/foreground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <EditText
+            android:id="@+id/userId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="50dp"
+            android:background="@drawable/round_corners_edittext"
+            android:hint="\@utilisateur ou email"
+            android:padding="7dp"
+            android:paddingLeft="20dp"
+            android:paddingStart="20dp"
+            android:textSize="15dp"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:drawablePadding="12dp"
+            android:singleLine="true"/>
+
+        <EditText
+            android:id="@+id/userPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/userId"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="-25dp"
+            android:background="@drawable/round_corners_edittext"
+            android:hint="Mot de passe"
+            android:inputType="textPassword"
+            android:padding="7dp"
+            android:paddingLeft="20dp"
+            android:paddingStart="20dp"
+            android:textSize="15dp"
+            android:drawableLeft="@drawable/ic_fingerprint_black_24dp"
+            android:drawablePadding="12dp"/>
+
+
+        <TextView
+            android:id="@+id/error_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Mot de passe oublié?"
+            android:textColor="@color/red"
+            android:layout_below="@+id/userPassword"
+            android:layout_marginTop="10dp"
+            android:visibility="invisible"/>
+
+        <!--<com.unstoppable.submitbuttonview.SubmitButton
+            android:id="@+id/submitbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:buttonText="Connexion"
+            app:buttonColor="@color/colorPrimaryDark"/>-->
+
+
+        <ProgressBar
+            android:id="@+id/signin_loader"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/userPassword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:indeterminate="true"
+            android:visibility="invisible"
+            />
+
+
+        <Button
+            android:id="@+id/connection_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userPassword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/round_button"
+            android:inputType="textCapCharacters"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp"
+            android:text="Connexion"
+            android:textColor="@android:color/white"
+            />
+
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_below="@+id/connection_btn"
+            android:layout_centerHorizontal="true"/>
+
+        <!--<ImageView
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="49dp"
+            app:srcCompat="@drawable/i_care_white" />-->
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/userId"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="-20dp"
+            android:text="Connectez-vous"
+            android:textColor="@android:color/white"
+            android:textSize="25dp" />
+
+
+    </RelativeLayout>
+
+
+    <include
+        android:id="@+id/create_layout"
+        layout="@layout/create_user_form"
+        android:visibility="invisible"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginRight="25dp"
+        android:src="@drawable/add_user"
+        app:backgroundTint="@color/accentBlue"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/i_care_white" />
+<!--
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="34dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="@color/accentBlue"
+        app:srcCompat="@drawable/ic_action_new"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentRight="true" />
+-->
+
+</RelativeLayout>

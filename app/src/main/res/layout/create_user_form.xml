@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/background_pills_icons_black"
+  >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/accentBlue"
+        android:alpha="0.93"
+        android:clickable="true">
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="90dp"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp">
+
+    <TextView
+        android:id="@+id/introText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Creer votre compte"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="25sp"/>
+
+
+    <!--<android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_first_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/grayBackground"
+        android:layout_margin="10dp">
+
+        <EditText
+            android:id="@+id/input_first_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Prénom"
+            android:textColor="@color/white"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+       -->
+
+        <EditText
+            android:id="@+id/input_login_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_corners_edittext"
+            android:layout_below="@+id/introText"
+            android:hint="\@identifiant"
+            android:padding="7dp"
+            android:paddingLeft="20dp"
+            android:paddingStart="20dp"
+            android:textSize="15dp"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:drawablePadding="12dp"
+            android:maxLength="10"
+            android:singleLine="true"/>
+
+
+        <EditText
+            android:id="@+id/input_first_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_corners_edittext"
+            android:layout_below="@+id/input_login_name"
+            android:hint="Prénoms"
+            android:padding="7dp"
+            android:paddingLeft="20dp"
+            android:paddingStart="20dp"
+            android:textSize="15dp"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:drawablePadding="12dp"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:inputType="textPersonName"/>
+
+
+        <EditText
+            android:id="@+id/input_last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_first_name"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_corners_edittext"
+            android:hint="Noms"
+            android:padding="7dp"
+            android:paddingLeft="20dp"
+            android:paddingStart="20dp"
+            android:textSize="15dp"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:drawablePadding="12dp"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/input_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_last_name"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_corners_edittext"
+            android:hint="Email"
+            android:padding="7dp"
+            android:paddingLeft="20dp"
+            android:paddingStart="20dp"
+            android:textSize="15dp"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:drawableTint="#BABABA"
+            android:drawablePadding="12dp"
+            android:maxLength="40"
+            android:singleLine="true"
+            android:inputType="textEmailAddress"/>
+
+        <EditText
+            android:id="@+id/input_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_email"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_corners_edittext"
+            android:hint="Mot de passe"
+            android:padding="7dp"
+            android:paddingLeft="20dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textSize="15dp"
+            android:drawableLeft="@drawable/ic_fingerprint_black_24dp"
+            android:drawablePadding="12dp"
+            android:maxLength="13"
+            android:singleLine="true"
+            android:maxLines="1"/>
+
+
+        <TextView
+            android:id="@+id/onCreate_error_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Erreur"
+            android:textColor="@color/red"
+            android:layout_below="@+id/input_password"
+            android:layout_marginTop="10dp"
+            android:visibility="invisible" />
+
+
+        <Button
+            android:id="@+id/create_account_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="S'enregistrer"
+            android:textAllCaps="false"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/input_password"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/round_button"
+            android:backgroundTint="@color/accentHardBlue"
+            android:inputType="textCapCharacters"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp"
+            android:textColor="@android:color/white"/>
+
+
+        <ProgressBar
+            android:id="@+id/create_loader"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/input_password"
+            android:layout_marginTop="40dp"
+            android:indeterminate="true"
+            android:visibility="invisible">
+
+        </ProgressBar>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

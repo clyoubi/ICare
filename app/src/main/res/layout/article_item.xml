@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:paddingBottom="5dp"
+        android:background="@android:color/white">
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/image_banner"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/grayBackground"
+                android:scaleType="centerCrop"
+                android:transitionName="imageTransition"/>
+
+
+        <ImageView
+            android:id="@+id/player_icon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_play_circle_outline_black_24dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:layout_below="@+id/image_banner"
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, do eiusmod tempor incididunt ut labore"
+            android:textSize="17dp"
+            android:layout_margin="10dp"
+            android:layout_centerHorizontal="true"
+            android:maxLines="3"
+            android:textColor="@color/raven"
+            android:textStyle="bold"
+            android:transitionName="titleTransition"/>
+
+
+        <TextView
+            android:layout_below="@+id/title"
+            android:id="@+id/source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="source"
+            android:maxWidth="100dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="italic"
+            android:textColor="@color/raven"
+            android:textSize="11sp"
+            android:transitionName="detailTransition"/>
+
+        <TextView
+            android:id="@+id/postOn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/source"
+            android:maxLines="1"
+            android:text="Posted On"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:textStyle="italic"
+            android:textSize="11sp"
+            android:textColor="@color/raven"
+            android:transitionName="detailTransition"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.cly13.firsttest.MainActivity">
+
+    <!--<item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="Paramètres"
+        app:showAsAction="never" />-->
+
+    <item
+        android:id="@+id/health_types"
+        android:icon="@drawable/ic_filter_list_black_24dp"
+        android:orderInCategory="100"
+        android:title="places"
+        app:showAsAction="always" />
+
+
+    <item
+        android:id="@+id/open_filter"
+        android:icon="@drawable/ic_radio_button_checked_black_24dp"
+        android:orderInCategory="99"
+        android:title="Places"
+        app:showAsAction="always" />
+
+
+   <!-- <item
+        android:id="@+id/ping_location"
+        android:icon="@drawable/ic_my_location_black_24dp"
+        android:orderInCategory="99"
+        android:title="Places"
+        app:showAsAction="always" />-->
+
+    <item
+        android:id="@+id/more_cities"
+        android:title="Plus de villes"
+        app:showAsAction="never"
+        />
+
+
+    <item
+        android:id="@+id/action_search"
+        android:orderInCategory="99"
+        android:title="Search"
+        app:showAsAction="always"
+        android:icon="@drawable/search"
+        app:actionViewClass="android.support.v7.widget.SearchView"/>
+
+</menu>

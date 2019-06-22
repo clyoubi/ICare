@@ -1,0 +1,22 @@
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+    <item
+        android:id="@+id/icare4u"
+        android:title="I Care 4U">
+    </item>
+
+
+    <item
+        android:id="@+id/action_settings"
+        android:title="Paramètres">
+    </item>
+
+    <item
+        android:id="@+id/about"
+        android:title="A porpos">
+    </item>
+
+
+</menu>

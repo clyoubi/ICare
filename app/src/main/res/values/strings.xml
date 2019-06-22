@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">I Care</string>
+    <string name="kristen">Fonts/Kris.TTF</string>
+    <string name="ralewayRegular">Fonts/Raleway/RalewayRegular.ttf</string>
+    <string name="ralewayBold">Fonts/Raleway/RalewayBold.ttf</string>
+    <string name="ralewaySemiBold">Fonts/Raleway/RalewaySemiBold.ttf</string>
+    <string name="ralewayLightItalic">Fonts/Raleway/RalewayLightItalic.ttf</string>
+    <string name="ralewayItalic">Fonts/Raleway/RalewayItalic.ttf</string>
+
+    <string name="latoRegular">Fonts/Lato/LatoRegular.ttf</string>
+    <string name="latoSemiBold">Fonts/Lato/LatoSemiBold.ttf</string>
+
+
+
+    <string name="login_preferences">com.smookcreative.icare_login_preferences</string>
+    <string name="login_status">com.smookcreative.icare_login_status</string>
+    <string name="first_login">com.smookcreative.icare_first_login_status</string>
+    <string name="favourite_list">com.smookcreative.icare_favourite_list</string>
+    <string name="saved_articles">[]</string>
+
+
+    <string name="user_fisrt_name">My first name</string>
+    <string name="user_ID">My ID</string>
+    <string name="user_last_name">My last name</string>
+    <string name="user_display_name">Me</string>
+    <string name="user_nice_name">\@Me</string>
+    <string name="user_login">\@Me</string>
+    <string name="user_email">email@example.xyz</string>
+    <string name="user_role">Sign in as?</string>
+    <string name="user_city">user_city</string>
+    <string name="user_hash">account hash</string>
+    <string name="user_status">0</string>
+    <string name="user_picture">com.smookcreative.icare_user_picture</string>
+    <string name="is_facebook_login">com.smookcreative.icare_is_facebook_login</string>
+
+
+    <string name="is_audio_conversion">com.smookcreative.icare_is_audio_conversion</string>
+
+
+    <!-- Firebase-->
+    <string name="notifications_admin_channel_name">com.smookcreative.icare.notifications_admin_channel_name</string>
+    <string name="notifications_admin_channel_description">com.smookcreative.icare.notifications_admin_channel_description</string>
+
+
+
+    <string name="facebook_app_id">343984319666648</string> <!--<string name="fb_login_protocol_scheme">fb177354929838375</string>-->
+</resources>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:background="@android:color/white">
+
+            <TextView
+                android:id="@+id/catName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/star"
+                android:text="Plus d'articles"
+                android:textColor="@color/raven"
+                android:textSize="16dp"
+                />
+
+        <TextView
+            android:id="@+id/article_count"
+            android:layout_below="@+id/catName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(250) articles"
+            android:textStyle="italic"
+            android:textColor="@color/raven"/>
+
+        <ImageView
+            android:id="@+id/star"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:src="@drawable/star_empty"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+
+            android:id="@+id/starLottie"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/catName"
+            android:clickable="true"
+            android:scaleType="centerCrop"
+            android:visibility="invisible"
+            app:lottie_autoPlay="false"
+            app:lottie_fileName="Lotties/star.json"
+            app:lottie_loop="false"
+            android:layout_toRightOf="@+id/catName"
+           />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

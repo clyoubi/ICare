@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:icon="@drawable/ic_file_download_black_24dp"
+        app:showAsAction="always"
+        android:id="@+id/download"
+        android:title="enregistrer"
+        android:orderInCategory="100">
+    </item>
+
+    <item
+        android:icon="@drawable/share1"
+        app:showAsAction="always"
+        android:id="@+id/share"
+        android:title="partager"
+        android:orderInCategory="98">
+    </item>
+
+    <item
+        android:icon="@drawable/ic_record_voice_over_black_24dp"
+        app:showAsAction="always"
+        android:id="@+id/listen"
+        android:title="ecouter"
+        android:orderInCategory="98">
+    </item>
+
+</menu>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cardHeightBig">110dp</dimen>
+    <dimen name="cardWidthBig">85dp</dimen>
+
+    <dimen name="cardHeight">110dp</dimen>
+    <dimen name="cardWidth">85dp</dimen>
+
+    <dimen name="elevation">3dp</dimen>
+
+</resources>

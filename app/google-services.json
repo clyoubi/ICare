@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "365965671658",
+    "firebase_url": "https://i-care-219214.firebaseio.com",
+    "project_id": "i-care-219214",
+    "storage_bucket": "i-care-219214.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:365965671658:android:1ebb37e95fc0fc4c",
+        "android_client_info": {
+          "package_name": "com.smookcreative.icare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "365965671658-hhrjhp68br8t647hvhft5ecthmmr93nk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBr8HS5PpOnV3JG--kz2mQeF6ezzDSIwNE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

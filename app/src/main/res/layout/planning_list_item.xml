@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp">
+
+            <TextView
+                android:id="@+id/hour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="15h00"
+                android:textStyle="bold"/>
+
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/hour"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Retirer mes radiographies"
+            android:textStyle="bold" />
+
+
+
+            <View
+                android:id="@+id/stateCircle"
+                android:layout_width="7dp"
+                android:layout_height="7dp"
+                android:layout_toLeftOf="@+id/state"
+                android:layout_below="@+id/hour"
+                android:background="@drawable/notification_circle"
+                android:backgroundTint="@color/colorAccent"
+                android:layout_margin="5dp"/>
+
+
+                <TextView
+                    android:id="@+id/state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/hour"
+                    android:layout_alignParentEnd="true"
+                    android:text="Urgent"
+                    android:layout_alignParentRight="true" />
+
+
+        <TextView
+            android:id="@+id/place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hour"
+            android:layout_toLeftOf="@+id/stateCircle"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Hopital Central" />
+
+
+
+            <View
+                android:id="@+id/Hdivider2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/place"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_centerHorizontal="true"
+                android:background="@android:color/darker_gray" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
